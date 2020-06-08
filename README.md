@@ -1,9 +1,9 @@
 # F1TENTH Racecar Simulator
 
-This is a lightweight 2D simulator of the UPenn F1/10 Racecar.
+This is a lightweight 2D simulator of the UPenn F1TENTH Racecar.
 It can be built with ROS, or it can be used as a standalone C++ library.
 
-**NOTE:** we are working on more thorough documentation, but for now please read this document.
+https://f1tenth.readthedocs.io/en/latest/going_forward/simulator/index.html
 
 ## ROS
 
