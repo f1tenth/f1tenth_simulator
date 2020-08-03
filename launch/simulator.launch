@@ -4,7 +4,7 @@
   <node pkg="joy" name="joy_node" type="joy_node"/>
 
   <!-- Launch a map from the maps folder-->
-  <arg name="map" default="$(find f1tenth_simulator)/maps/levine.yaml"/>
+  <arg name="map" default="$(find f1tenth_simulator)/maps/levine_blocked.yaml"/>
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map)"/>
 
   <!-- Launch the racecar model -->
@@ -35,6 +35,9 @@
     <rosparam command="load" file="$(find f1tenth_simulator)/params.yaml"/>
   </node>
 
+  <node pkg="f1tenth_simulator" name="auto_driver" type="auto_driver.py" output="screen">
+    <rosparam command="load" file="$(find f1tenth_simulator)/params.yaml"/>
+   </node>
   <!-- ***Put launch command for new planner here:-->
   <!-- Launch the New Planner Node -->
   <!--   <node pkg="f1tenth_simulator" name="new node's name" type="new file name" output="screen">

@@ -45,6 +45,7 @@ if(DEFINED CATKIN_DEVEL_PREFIX)
   find_package(catkin REQUIRED COMPONENTS
     roslib
     roscpp
+    rospy
     tf2
     tf2_ros
     tf2_geometry_msgs
@@ -105,3 +106,10 @@ endif()
 ######################################
 # < End ROS
 ######################################
+
+######################################
+# Python
+######################################
+catkin_install_python(PROGRAMS node/auto_driver.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

@@ -47,7 +47,7 @@ map_free_threshold: 0.8
 ttc_threshold: 0.01
 
 # Indices for mux controller
-mux_size: 5
+mux_size: 6
 joy_mux_idx: 0
 key_mux_idx: 1
 random_walker_mux_idx: 2
@@ -55,7 +55,7 @@ brake_mux_idx: 3
 nav_mux_idx: 4
 # **Add index for new planning method here**
 # **(increase mux_size accordingly)**
-new_method_mux_idx: -1
+auto_drive_mux_idx: 5
 
 # Enables joystick if true
 joy: true
@@ -79,7 +79,7 @@ brake_key_char: "b"
 random_walk_key_char: "r"
 nav_key_char: "n"
 # **Add button for new planning method here**
-new_key_char: "z"
+auto_drive_key_char: "p"
 
 # Keyboard driving params
 keyboard_speed: 1.8  # meters/second
@@ -108,7 +108,7 @@ rand_drive_topic: "/rand_drive"
 brake_drive_topic: "/brake"
 nav_drive_topic: "/nav"
 # **Add name for new planning method here**
-new_drive_topic: "/new_drive"
+auto_drive_topic: "/auto_drive"
 
 # name of file to write collision log to 
 collision_file: "collision_file"
